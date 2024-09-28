@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eligibilty-Driving</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="driving">
+    <h2>Eligibilty-Driving</h2>
+    <input type="number"  id="age">
+    <button id="btn">Click Me</button>
+  </div>
+ <script>
+  let age = document.getElementById('age')
+  let button = document.getElementById('btn')
+
+  button.addEventListener("click",() => {
+    if(age.value < 0){
+      alert("Doesnt Exist");
+    }
+    else if(age.value > 0 && age.value < 15){
+      alert("Dont even think of driving!")
+    }
+    else if(age.value >= 15 && age.value <18){
+      alert("You can think of driving!!")
+    }
+    else{
+      alert("You are Eligible to Drive!!")
+    }
+  });
+ </script>
+</body>
+</html>
